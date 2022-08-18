@@ -1,13 +1,13 @@
-# LSCA
-LSCA: Latent Class Analysis with Semi-parametric Proportional Hazards Submodel for Time-to-event Data
+# lcphR
+lcphR: Latent Class Proportional Hazards Regression
 
 # Installation Guide
 ```{r}
 # install.packages("devtools")
-devtools::install_github("tengfei-emory/LSCA")
-library(LSCA)
+devtools::install_github("tengfei-emory/lcphR")
+library(lcphR)
 ```
-Currently `LSCA` supports R version >= 3.3.0.
+Currently `lcphR` supports R version >= 4.1.1.
 
 # Example: analyze a simulated dataset
 
@@ -25,7 +25,7 @@ Specifically, it returns a data frame of 2 latent classes with 2 baseline covari
 The analysis for the dataset `dat` can be conducted by running `LSCA` function:
 
   ```{r}
-lcfit <- LSCA::LSCA(dat,num_class=2,covx=c('Xcov1','Xcov2'),varest=T,traceplot=F,initial='kmeans')
+lcfit <- lcphR(dat,num_class=2,covx=c('Xcov1','Xcov2'),tolEM=1e-3,varest=T,traceplot=T,initial='kmeans')
 ```
 
 The output list `lcfit` contains the following information:
@@ -40,11 +40,7 @@ The output list `lcfit` contains the following information:
 
 `ASE`: standard error estimates for alpha and zeta, by the close-form estimator derived from observed-data log likelihood.
 
-`Ipar`: estimated ariance-covariace matrix for alpha and zeta, by the close-form estimator derived from observed-data log likelihood.
-
 `nASESr`: standard error estimates for alpha and zeta, by the numerical estimator derived from observed-data profile log likelihood.
-
-`nASESrIpar`: estimated ariance-covariace matrix for alpha and zeta, by the numerical estimator derived from observed-data profile log likelihood.
 
 `chaztgt` and `chaztgtASE`: point estimates and corresponding standard error estimates for the baseline hazard function at specified times (under development).
 
