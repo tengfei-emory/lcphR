@@ -1,0 +1,13 @@
+Package: lcphR
+Type: Package
+Title: lcphR: Latent Class Proportional Hazards Regression
+Version: 0.1
+Date: 2022-08-18
+Author: Teng Fei
+Maintainer: Teng Fei <feit1@mskcc.org>
+Description: Latent Class Proportional Hazards Regression with Heterogeneous Survival Data
+License: GPL-3.0
+Imports: stats, VGAM, Rcpp (>= 1.0.8.3)
+Depends: R (>= 4.1.1)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.2
