@@ -65,3 +65,7 @@ The output list `lcfit` contains the following information:
 `entropy`: standardized entropy R-square ranging from 0 to 1. A value close one indicates better separation of classes.
 
 `censor`: censoring rate of the observations.
+
+## Reference
+
+Fei, T, Hanfelt, J, Peng, L. Latent Class Proportional Hazards Regression with Heterogeneous Survival Data. Statistics and its Interface, accepted.
