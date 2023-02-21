@@ -13,7 +13,7 @@ Currently `lcphR` supports R version >= 4.1.1.
 
 ## Data simulation
 
-By default, the function `simulation(n)` generates a dataset with n observations under the scenario 1 described by Fei, Hanfelt and Peng (submitted).
+By default, the function `simulation(n)` generates a dataset with n observations under the scenario 1 described by Fei, Hanfelt and Peng (2023).
 ```{r}
 # generate a dataset with 500 individuals
 dat <- simulation(500)
