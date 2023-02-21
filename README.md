@@ -68,4 +68,4 @@ The output list `lcfit` contains the following information:
 
 ## Reference
 
-Fei, T, Hanfelt, J, Peng, L. Latent Class Proportional Hazards Regression with Heterogeneous Survival Data. Statistics and its Interface, accepted.
+Fei, T, Hanfelt, J, Peng, L. [Latent Class Proportional Hazards Regression with Heterogeneous Survival Data](https://arxiv.org/pdf/2202.00775.pdf). Statistics and its Interface, accepted.
